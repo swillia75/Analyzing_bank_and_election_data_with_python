@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 Financial Analysis
 ------------------------------------
 Total months:  86
@@ -5,3 +6,12 @@ Total:  $38382578
 Average Change:  $446309.05
 Greatest increase in Profits:  Feb-2012 ($1170593)
 Greatest decrease in Losses:  Sep-2013 (-$1196225)
+=======
+Financial Analysis
+------------------------------------
+Total months:  86
+Total:  $38382578
+Average Change:  $446309.05
+Greatest increase in Profits:  Feb-2012 ($1170593)
+Greatest decrease in Losses:  Sep-2013 (-$1196225)
+>>>>>>> 6d09633e85965099bc3c4e573e389d485166268a

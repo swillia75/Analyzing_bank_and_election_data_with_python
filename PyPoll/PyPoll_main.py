@@ -1,4 +1,3 @@
-<<<<<<< HEAD
 #Import os
 import os
 #import csv to read file
@@ -62,7 +61,6 @@ print(candidate_list[2] + "  " + (vote_percentage[2])+ " " + "(" + str(vote_coun
 print(candidate_list[3] + "  " + (vote_percentage[3])+ " " + "(" + str(vote_count[3]) + ")", file=open("PyPoll analysis/output.txt", "a"))
 print("---------------------------------", file=open("PyPoll analysis/output.txt", "a"))
 print(("Winner:") + "   " + winner, file=open("PyPoll analysis/output.txt", "a"))
-=======
 #Import os
 import os
 #import csv to read file
@@ -126,5 +124,4 @@ print(candidate_list[2] + "  " + (vote_percentage[2])+ " " + "(" + str(vote_coun
 print(candidate_list[3] + "  " + (vote_percentage[3])+ " " + "(" + str(vote_count[3]) + ")", file=open("PyPoll analysis/output.txt", "a"))
 print("---------------------------------", file=open("PyPoll analysis/output.txt", "a"))
 print(("Winner:") + "   " + winner, file=open("PyPoll analysis/output.txt", "a"))
->>>>>>> 6d09633e85965099bc3c4e573e389d485166268a
 print("---------------------------------", file=open("PyPoll analysis/output.txt", "a"))

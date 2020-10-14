@@ -65,10 +65,16 @@ with open(PyBank_csv, newline="") as csvfile:
   
         
     
-
+    print("Financial Analysis")
+    print("------------------------------------")
+    print("Total months:"+"  "+ str(total_months))
+    print("Total:" + "  " +str(total_formatted))
+    print("Average Change:" + "  " + str(average_change_formatted))
+    print("Greatest increase in Profits:" + "  " + str(max_profit_date) + " " + "(" + str(max_profit_formatted) + ")")
+    print("Greatest decrease in Losses:" + "  " + str(max_losses_date) + " " + "(" + str(max_losses_formatted) + ")")
     
 
-    #Final analysis printout
+    #Final analysis out to text
 
     print("Financial Analysis", file=open("PyBank analysis/output.txt", "w"))
     print("------------------------------------", file=open("PyBank analysis/output.txt", "a"))

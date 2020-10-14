@@ -1,4 +1,3 @@
-<<<<<<< HEAD
 #import os
 import os
 
@@ -70,5 +69,3 @@ with open(PyBank_csv, newline="") as csvfile:
     print("Average Change:" + "  " + str(average_change_formatted), file=open("PyBank analysis/output.txt", "a"))
     print("Greatest increase in Profits:" + "  " + str(max_profit_date) + " " + "(" + str(max_profit_formatted) + ")", file=open("PyBank analysis/output.txt", "a"))
     print("Greatest decrease in Losses:" + "  " + str(max_losses_date) + " " + "(" + str(max_losses_formatted) + ")", file=open("PyBank analysis/output.txt", "a"))
-
-=======

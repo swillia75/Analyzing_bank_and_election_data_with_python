@@ -37,30 +37,31 @@ with open(PyBank_csv, newline="") as csvfile:
 
     #The net total amount "profits/losses" over entire period
     
-        
-    total += int(row[1])
-    total_formatted = "${:.0f}".format(total)
+    for row in budget_list:
+
+        total += int(row[1])
+        total_formatted = "${:.0f}".format(total)
        
-     #average change for "profits/losses" over entire period
+        #average change for "profits/losses" over entire period
 
-    average_change = (total / total_months)
-    average_change_formatted = "${:.2f}".format(average_change)
+        average_change = (total / total_months)
+        average_change_formatted = "${:.2f}".format(average_change)
 
-    #The greatest increase in profits (date and amount) over entire period
+        #The greatest increase in profits (date and amount) over entire period
     
-    if (int(row[1])) > max_profit:
-        max_profit = int(row[1])
-        max_profit_date = str(row[0])
-        max_profit_formatted = "${:.0f}".format(max_profit)
+        if (int(row[1])) > max_profit:
+            max_profit = int(row[1])
+            max_profit_date = str(row[0])
+            max_profit_formatted = "${:.0f}".format(max_profit)
 
          
 
-    #The greatest decrease in losses (date and amount) over entire period
+        #The greatest decrease in losses (date and amount) over entire period
 
-    elif (int(row[1])) < max_losses:
-        max_losses = int(row[1])
-        max_losses_date = str(row[0])
-        max_losses_formatted = "${:.0f}".format(max_losses).replace('$-','-$')
+        elif (int(row[1])) < max_losses:
+            max_losses = int(row[1])
+            max_losses_date = str(row[0])
+            max_losses_formatted = "${:.0f}".format(max_losses).replace('$-','-$')
   
         
     

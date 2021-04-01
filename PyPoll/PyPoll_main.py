@@ -10,10 +10,6 @@ import csv
 
 PyPoll_csv = os.path.join("Resources", "election_data.csv")
 
-# track vote count
-
-vote_count = [0,0,0,0]
-
 # Open the CSV
 
 with open(PyPoll_csv, newline="") as csvfile:
@@ -22,34 +18,68 @@ with open(PyPoll_csv, newline="") as csvfile:
     #reader header
     csv_header = next(csvreader)
     
-    #total vote counter
+    #set up counters
 
-    total_votes = 0 
-   
-    #complete list of candidates receving votes
-     
+    total_votes = 0      
     candidate_list = []
+    vote_list = []
+    candidate_votes = [0, 0, 0, 0]
 
     #Loop through csvreader to get candidate name and votes
     
     for row in csvreader:
-
         #Add 1 vote to total vote count
         total_votes += 1
-
-        #Add candidate name to candidate list
-        print(row[2])
+        # #Add candidate name to candidate list
+        
+        candidate_list.append(row[2])
+        # if candidate in candidate_list:
         
             
-    #     #total number of votes for each candidate
+        #print(candidate_list)
 
-    #     #else:
-    #      #   candidate_index = candidate_list.index(candidate_names)
-    #      #   vote_count[candidate_index] += 1
+    for candidate in candidate_list:
+        
+        if candidate[2] is not vote_list:
+            vote_list.append(candidate[2])
+
+    print(total_votes)
+    print(vote_list)
+    
+    
+
+        # for candidate_name in vote_list:
+        #     #print(candidate_name)
+
+        #     if candidate_name not in candidate_list:
+        #         candidate_list.append(candidate_name)
+
+            # if candidate_name == candidate_list[0]:
+            #     candidate_votes[0] += 1
+
+            # elif candidate_name == candidate_list[1]:
+            #     candidate_votes[1] += 1
+
+            # elif candidate_name == candidate_list[2]:
+            #     candidate_votes[2] += 1
+
+    #         else:
+    #             pass
+            
+    # print(candidate_list) 
+    #print(candidate_votes)       
+            
+                
+            #total number of votes for each candidate
+
+            #else:
+            #   candidate_index = candidate_list.index(candidate_names)
+            #   
 
     #  #percentage of votes for each candidate
     
-    print(total_votes)
+        #print(vote_list)
+    #print(candidate_votes)
           
 #     vote_percentage = list()
     

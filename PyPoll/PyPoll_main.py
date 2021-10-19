@@ -31,9 +31,14 @@ with open(PyPoll_csv, newline="") as csvfile:
         vote_count = vote_count + 1
         # #Add candidate name to candidate list
         vote_list.append(row[2])
+
+    for candidate in vote_list:
+
+        if candidate not in candidatelist:
+            candidatelist.append(candidate)
                
     print(vote_count)          
-    print(vote_list)
+    print(candidatelist)
    
 
         # for candidate_name in vote_list:

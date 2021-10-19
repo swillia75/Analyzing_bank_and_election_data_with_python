@@ -10,13 +10,14 @@ import csv
 
 PyPoll_csv = os.path.join("Resources", "election_data.csv")
 
-total_votes = 0      
-candidate_list = []
+vote_count = 0  
 vote_list = []
-candidate_votes = [0, 0, 0, 0]
+candidatelist = []
+candidate_votes = []
+vote_percentage = []
 # Open the CSV
 
-with open(PyPoll_csv, "r", newline="") as csvfile:
+with open(PyPoll_csv, newline="") as csvfile:
 
     csvreader = csv.reader(csvfile, delimiter=",")
 
@@ -27,23 +28,13 @@ with open(PyPoll_csv, "r", newline="") as csvfile:
     
     for row in csvreader:
         #Add 1 vote to total vote count
-        total_votes += 1
+        vote_count = vote_count + 1
         # #Add candidate name to candidate list
-        if row[2] not in candidate_list:
-        candidate_list.append(row[2])
-        
-              
-    print(candidate_list)
-
-    for candidate in candidate_list:
-        
-        if (candidate[2] not in vote_list):
-            vote_list.append(candidate[2])
-
-    print(total_votes)
+        vote_list.append(row[2])
+               
+    print(vote_count)          
     print(vote_list)
-    
-    
+   
 
         # for candidate_name in vote_list:
         #     #print(candidate_name)

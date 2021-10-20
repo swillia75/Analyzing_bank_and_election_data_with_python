@@ -1,41 +1,32 @@
-# python_challenge
-python assignment
-In PyBank, you are tasked with creating a Python script for analyzing the financial records of your company. You will give a set of financial data called budget_data.csv. The dataset is composed of two columns: Date and Profit/Losses. (Thankfully, your company has rather lax standards for accounting so the records are simple.)
+# Analyzing financial data and election data with Python
+# Project Description
+
+![](images/Smith-Bruce-2.jpg)
+
+# Purpose:
+To use python to summarize financial data and election data into easy to read tables. Also, the results were printed to output file. 
+
+# PyBank
 
 
-Your task is to create a Python script that analyzes the records to calculate each of the following:
+# PyPoll
 
 
-The total number of months included in the dataset
+# Tools Required
+
+Python, Git Bash, Visual Studio
+
+# Instructions
 
 
-The net total amount of "Profit/Losses" over the entire period
+# Files
 
+CFB ETL Challenge Project.ipynb Jupyter Notebook with Pandas extraction code
 
-The average of the changes in "Profit/Losses" over the entire period
+![](images/Henry%20Jordan.jfif)
 
+# Results
 
-The greatest increase in profits (date and amount) over the entire period
+A dataframe was created using extraction techniques in Pandas that was loaded into PostgreSQL and transformed into a table of all college football teams, their 2019, record, and the best NFL player from each school.
 
-
-The greatest decrease in losses (date and amount) over the entire period
-
-In PyPoll, you are tasked with helping a small, rural town modernize its vote counting process.
-
-
-You will be give a set of poll data called election_data.csv. The dataset is composed of three columns: Voter ID, County, and Candidate. Your task is to create a Python script that analyzes the votes and calculates each of the following:
-
-
-The total number of votes cast
-
-
-A complete list of candidates who received votes
-
-
-The percentage of votes each candidate won
-
-
-The total number of votes each candidate won
-
-
-The winner of the election based on popular vote.
+![](images/postgresql%20final.png)

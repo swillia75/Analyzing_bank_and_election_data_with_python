@@ -2,7 +2,7 @@
 # Project Description
 We were tasked with creating a Python script for analyzing the financial records of your company. You will give a set of financial data called budget_data.csv. The dataset is composed of two columns: Date and Profit/Losses.
 We were given a set of poll data called election_data.csv. The dataset is composed of three columns: Voter ID, County, and Candidate. Your task is to create a Python script that analyzes the votes
-![](images/Smith-Bruce-2.jpg)
+
 
 # Purpose:
 To use python to summarize financial data and election data into easy to read tables. Also, the results were printed to output file. 
@@ -63,8 +63,8 @@ output - text file with outcome results in table form
 
 # Results
 
-A dataframe was created using extraction techniques in Pandas that was loaded into PostgreSQL and transformed into a table of all college football teams, their 2019, record, and the best NFL player from each school.
+A table was created for the financial data showing growth and losses. For the election, a table was create to show the percentage of votes with Khan winning with 63%.
 
-![](PyBank%20analysis/output.txt)
+![](PyBank/PyBank%20analysis/output.txt)
 
-![](PyPoll%20analysis/output.txt)
+![](PyPoll/PyPoll%20analysis/output.txt)

@@ -43,7 +43,7 @@ with open(PyPoll_csv, newline="") as csvfile:
                
     print(vote_count)          
     print(candidate_votes)
-    #print(candidate_votes.values())
+    print(candidate_votes['Correy'])
     
    
 
@@ -51,10 +51,10 @@ print("Election Results")
 print("---------------------------------")
 print("Total votes:" + "  " + str(vote_count))
 print("---------------------------------") 
-print(candidatelist[0]) #+ "  " + (vote_percentage[0])+ " " + "(" + str(vote_count[0]) + ")")
-print(candidatelist[1])#+ "  " + (vote_percentage[1])+ " " + "(" + str(vote_count[1]) + ")")
-print(candidatelist[2])#+ "  " + (vote_percentage[2])+ " " + "(" + str(vote_count[2]) + ")")
-print(candidatelist[3])#+ "  " + (vote_percentage[3])+ " " + "(" + str(vote_count[3]) + ")")
+print((candidatelist[0]) + "  " + str((candidate_votes['Khan'])/vote_count) + " " + "(" + str(candidate_votes['Khan']) + ")")
+print((candidatelist[1]) + "  " + str((candidate_votes['Correy'])/vote_count) + " " + "(" + str(candidate_votes['Correy']) + ")")
+print((candidatelist[2]) + "  " + str((candidate_votes['Li'])/vote_count) + " " + "(" + str(candidate_votes['Li']) + ")")
+print((candidatelist[3]) + "  " + str((candidate_votes["O'Tooley"])/vote_count) + " " + "(" + str(candidate_votes["O'Tooley"]) + ")")
 print("---------------------------------")
 print(("Winner:") + "   " + candidatelist[0])
 

@@ -41,9 +41,9 @@ with open(PyPoll_csv, newline="") as csvfile:
         candidate_votes[candidate] = candidate_votes[candidate] + 1
             
                
-    print(vote_count)          
-    print(candidate_votes)
-    print(candidate_votes['Correy'])
+   # print(vote_count)          
+   # print(candidate_votes)
+   # print(candidate_votes['Correy'])
     
    
 
@@ -60,14 +60,14 @@ print(("Winner:") + "   " + candidatelist[0])
 
 # #export to text file
 
-#print("Election Results", file=open("PyPoll analysis/output.txt", "a"))
-#print("---------------------------------", file=open("PyPoll analysis/output.txt", "a"))
-#print("Total votes:" + "  " + str(total_votes), file=open("PyPoll analysis/output.txt", "a"))
-#print("---------------------------------", file=open("PyPoll analysis/output.txt", "a")) 
-#print(candidate_list[0] + "  " + (vote_percentage[0])+ " " + "(" + str(vote_count[0]) + ")", file=open("PyPoll analysis/output.txt", "a"))
-#print(candidate_list[1] + "  " + (vote_percentage[1])+ " " + "(" + str(vote_count[1]) + ")", file=open("PyPoll analysis/output.txt", "a"))
-#print(candidate_list[2] + "  " + (vote_percentage[2])+ " " + "(" + str(vote_count[2]) + ")", file=open("PyPoll analysis/output.txt", "a"))
-#print(candidate_list[3] + "  " + (vote_percentage[3])+ " " + "(" + str(vote_count[3]) + ")", file=open("PyPoll analysis/output.txt", "a"))
-#print("---------------------------------", file=open("PyPoll analysis/output.txt", "a"))
-#print(("Winner:") + "   " + winner, file=open("PyPoll analysis/output.txt", "a"))
-#print("---------------------------------", file=open("PyPoll analysis/output.txt", "a"))
+print("Election Results", file=open("PyPoll analysis/output.txt", "a"))
+print("---------------------------------", file=open("PyPoll analysis/output.txt", "a"))
+print("Total votes:" + "  " + str(vote_count), file=open("PyPoll analysis/output.txt", "a"))
+print("---------------------------------", file=open("PyPoll analysis/output.txt", "a")) 
+print((candidatelist[0]) + "     " + str(round(((candidate_votes['Khan'])/vote_count)*100)) + "%" + " " + "(" + str(candidate_votes['Khan']) + ")", file=open("PyPoll analysis/output.txt", "a"))
+print((candidatelist[1]) + "   " + str(round(((candidate_votes['Correy'])/vote_count)*100)) + "%" + " " + "(" + str(candidate_votes['Correy']) + ")", file=open("PyPoll analysis/output.txt", "a"))
+print((candidatelist[2]) + "       " + str(round(((candidate_votes['Li'])/vote_count)*100)) + "%" + " " + "(" + str(candidate_votes['Li']) + ")", file=open("PyPoll analysis/output.txt", "a"))
+print((candidatelist[3]) + "  " + str(round(((candidate_votes["O'Tooley"])/vote_count)*100)) + "%" + " " + "(" + str(candidate_votes["O'Tooley"]) + ")", file=open("PyPoll analysis/output.txt", "a"))
+print("---------------------------------", file=open("PyPoll analysis/output.txt", "a"))
+print((("Winner:") + "   " + candidatelist[0]), file=open("PyPoll analysis/output.txt", "a"))
+print("---------------------------------", file=open("PyPoll analysis/output.txt", "a"))
